@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Utility Page</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+    <script src="js/jquery.min.js"></script> 
+    
+</head>
+<body>
+
+<div class="jumbotron">
+      <div class="container">
+        <h1><center>Utility Page!</center></h1>
+      </div>
+    </div>
+
+<div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+<label><h3>File Upload:</h3></label> <br>
+Select file(s) to upload: <br><br>
+<form action="UploadFiles.jsp" method="POST" enctype="multipart/form-data">
+<input type="file" name="file-upload" multiple="muliple"  />
+<br>
+<button type="submit" class="btn btn-primary">Upload Files</button>
+</form>
+<br><br>
+<label><h3>Search Files:</h3></label> <br>
+<form action="SearchFiles.jsp" method="POST" >
+<input type="text" class="form-control input-md" name="str" placeholder="Enter text to search in files">
+<br>
+<button type="submit" class="btn btn-primary">Search</button>
+</form>
+</div>
+</div>
+</body>
+</html>
